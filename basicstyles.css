@@ -1,0 +1,204 @@
+/* Basic HTML5 element settings for CSS rosepage */
+header, nav, aside { 
+	display: block;
+	margin: 0px;
+	padding: 0px;
+}
+
+#container { 
+	border: thin solid black; 
+	background-color: #fff8dc;
+	width: 800px;
+	padding: 20px;
+	margin: auto;
+	overflow: auto;
+    position: relative;
+}
+
+body {
+    background-color: pink;
+	font-family: Arial, sans-serif;
+    font-style: italic;
+	
+}
+h1 {color: darkred;
+    }
+
+/* Begin Styles for the rose tip box*/
+aside {
+	float: right;
+	width: 11em;
+	background-color: mistyrose;
+	border: thin solid black;
+	margin: 1em;
+	padding: 1em;
+	font-style: italic;
+	font-size: 1.5em;
+	
+}
+/* End Style for the rose tip box*/
+
+/* Begin Styles for the Table */
+table {
+	border: thin solid darkred;
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table caption
+{
+	font-size: 1.5em;
+}
+
+table thead 
+{
+	border: thin solid darkred;
+}
+
+table td {
+	padding: .3em;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+/* End Styles for the Table */
+
+/* Begin Styles for the Nav Bar */
+nav {
+	text-align: center;
+}
+
+nav ul {
+	padding: 0px;
+	margin: 0px;
+	display:inline-block;
+	list-style-type: none;
+}
+
+nav ul li { 
+	display: inline-block; 
+	width: 150px;
+	border: thin solid darkred;
+	background-color: #fffdd0;
+	text-align:center;
+	margin: 0px;		
+	padding-bottom: .5em;
+	padding-top: .5em;
+}
+
+nav ul li:hover {
+	background-color:darkred;
+}
+
+nav ul li:hover a {
+	color: #fffdd0;
+}
+
+nav ul li a { 
+	text-decoration: none;
+	color: darkred;
+	font-size: 20pt;
+}
+/* End Styles for the Nav Bar */
+
+/* position of the velvet roses*/
+#rose-container {
+    Display: none;
+    }
+
+#rose-container {
+    text-align: center;
+    margin-top: 20px;
+    }
+
+#rose-container img {
+    width: 250px;
+    height: auto;
+    }
+
+#rose-animation {
+    position: relative;
+    width: 100%;
+    min-height: 600px;
+    overflow: hidden;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    }
+.rose-message {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 40px 20px;
+    }
+
+.rose {
+    position: absolute;
+    top: 10px;
+    width: 150px;
+    z-index: 1;
+    }
+
+.rose img {
+    width: 100%;
+    height: auto;
+    }
+
+.rose-left {
+    left: 20px;
+    }
+
+.rose-right {
+    right:20px;
+    }
+
+/* footer*/
+footer {
+    background-color: #591623;
+    color: #fffdd0;
+    text-align: center;
+    padding: 8px;
+    margin-top: 40px;
+    font-style: italic;
+    }
+
+/* rose animation*/
+
+#rose-animation {
+    position: relative;
+    min-height: 800px;
+    overflow: hidden;
+    }
+
+.rose {
+    position: absolute;
+    top: 10px;
+    width:150px;
+    z-index: 3;
+    transition: transform 0.2s ease-out;
+    }
+
+.rose img {
+    width: 100%;
+    height: auto;
+    }
+
+.rose-left {
+ left:10%;
+    }
+
+.rose-right {
+    right: 10%;
+    }
+
+.rose-message {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 40px 20px;
+    opacity: 0;
+    transition: opacity 1s ease;
+    }
+
+.rose-message.show {
+    opacity: 1;
+    }
